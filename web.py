@@ -10,14 +10,14 @@ st.set_page_config(
 )
 
 # Load the trained models
-diabetes_model = pickle.load(open(r"saved_demo_model\diabetes_model.sav", "rb"))
-heart_model = pickle.load(open(r"saved_demo_model\heart_model.sav", "rb"))
-parkinsons_model = pickle.load(open(r"saved_demo_model\parkinsons_model.sav", "rb"))
+diabetes_model = pickle.load(open(r"saved_demo_model/diabetes_model.sav", "rb"))
+heart_model = pickle.load(open(r"saved_demo_model/heart_model.sav", "rb"))
+parkinsons_model = pickle.load(open(r"saved_demo_model/parkinsons_model.sav", "rb"))
 
 # Load scalers
-diabetes_scaler = pickle.load(open(r"saved_demo_model\Di_scaler.sav", "rb"))
-heart_scaler = pickle.load(open(r"saved_demo_model\heart_scaler.sav", "rb"))  # FIXED
-parkinsons_scaler=pickle.load(open(r"saved_demo_model\parkinsons_scaler.sav","rb"))
+diabetes_scaler = pickle.load(open(r"saved_demo_model/Di_scaler.sav", "rb"))
+heart_scaler = pickle.load(open(r"saved_demo_model/heart_scaler.sav", "rb"))  # FIXED
+parkinsons_scaler=pickle.load(open(r"saved_demo_model/parkinsons_scaler.sav","rb"))
 # Sidebar Menu
 with st.sidebar:
     selected = option_menu(
